@@ -83,7 +83,9 @@ body {
 }
 
 .name {
-  font-size: clamp(2.2rem, 6vw, 5rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  white-space: nowrap;
+  text-align: center;
   font-weight: 800;
   line-height: 1;
   letter-spacing: -.04em;
@@ -91,7 +93,7 @@ body {
   margin-bottom: .6rem;
 }
 
-.name span { color: var(--cyan); }
+
 
 .tagline {
   font-family: 'JetBrains Mono', monospace;
@@ -369,7 +371,7 @@ body {
 @media (max-width: 600px) {
   .wrap { padding: 2rem 1.2rem 5rem; }
   .hero { padding: 3rem 0 2rem; }
-  .name { font-size: clamp(2rem, 11vw, 3.2rem); word-break: break-word; overflow: hidden; }
+  .name { font-size: clamp(1.2rem, 6vw, 2rem); white-space: normal; text-align: center; }
   .tagline { font-size: .65rem; letter-spacing: .12em; }
   .sys-info { gap: 1rem; }
   .interests { grid-template-columns: 1fr; }
