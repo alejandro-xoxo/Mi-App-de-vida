@@ -83,9 +83,9 @@ body {
 }
 
 .name {
-  font-size: clamp(3.5rem, 12vw, 8rem);
+  font-size: clamp(2.2rem, 6vw, 5rem);
   font-weight: 800;
-  line-height: .9;
+  line-height: 1;
   letter-spacing: -.04em;
   color: #fff;
   margin-bottom: .6rem;
@@ -358,4 +358,26 @@ body {
   .interests { grid-template-columns: 1fr; }
   .value-row { gap: .8rem; }
   .v-chip { display: none; }
+}
+
+/* === RESPONSIVE MEJORADO === */
+@media (max-width: 900px) {
+  .interests { grid-template-columns: repeat(2, 1fr); }
+  .value-row { gap: 1rem; }
+}
+
+@media (max-width: 600px) {
+  .wrap { padding: 2rem 1.2rem 5rem; }
+  .hero { padding: 3rem 0 2rem; }
+  .name { font-size: clamp(2rem, 11vw, 3.2rem); word-break: break-word; overflow: hidden; }
+  .tagline { font-size: .65rem; letter-spacing: .12em; }
+  .sys-info { gap: 1rem; }
+  .interests { grid-template-columns: 1fr; }
+  .value-row { gap: .6rem; }
+  .v-chip { display: none; }
+  .v-num { font-size: 1rem; min-width: 28px; }
+  .skill-tag { font-size: .75rem; }
+  .purpose-text { font-size: .95rem; }
+  .status-bar { gap: 1rem; }
+  .divider { margin: 2rem 0; }
 }
